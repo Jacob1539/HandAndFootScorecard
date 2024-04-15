@@ -1,0 +1,250 @@
+/*Stylesheet for Hand & Foot Scoresheet V1.4*/
+
+/*
+* Header & Navbar
+*/
+header {
+  background-color: #282828;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+li.navbar{
+  float:left;
+}
+
+li a{
+  padding:14px 16px;
+  display:block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover{
+  background-color: #000;
+}
+
+li a.active:hover{
+  background-color: #fff;
+  color:#282828;
+}
+
+ul.unavbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  background-color: #1c1c1c;
+}
+
+.active{
+  background-color: #fff;
+  color:#282828;
+}
+
+/*
+* Sections/Divs
+*/
+
+section.teamNameAndScore {
+  display: -webkit-flex;
+  display: flex;
+}
+
+section.mainQuadrants {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  background-color: #282828;
+  padding: 20px;
+  align-items: center;
+}
+
+section.fields {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.central {
+  text-align: center;
+}
+
+.version{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+  padding:5px;
+  padding-bottom: 30px;
+}
+
+footer{
+  background-color: #282828;
+  padding:0;
+  margin:0;
+}
+
+body {
+  margin: 0;
+  background-color: #282828;
+}
+
+/* @media styling is for small screens */
+@media (max-width: 600px) {
+  section.teamNameAndScore {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  section.fields {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/*
+* Text, fields, tables
+*/
+
+h1 {
+  text-align: center;
+   font-size: 70px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+   font-size: 80px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+h3{
+  color: #fff;
+  text-align: left;
+  font-size: 45px;
+  margin-bottom: -5px;
+}
+
+h6 {
+  text-align: center;
+   font-size: 10px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+*{
+  font-family: 'Arial', sans-serif;
+}
+
+.t1Name {
+  font-size: 60px;
+  background-color: #282828;
+  font-family: 'Arial', sans-serif;
+  color: #66F2B1;
+  border: 0px;
+  width: 100%;
+}
+
+.t2Name {
+  font-size: 60px;
+  background-color: #282828;
+  font-family: 'Arial', sans-serif;
+  color: #66e0f2;
+  border: 0px;
+  width: 100%;
+}
+
+.t1Score {
+  font-size: 100px;
+  font-family: 'Arial', sans-serif;
+  color: #66F2B1;
+}
+
+.t2Score {
+  font-size: 100px;
+  font-family: 'Arial', sans-serif;
+  color: #66e0f2;
+}
+
+.t1Text {
+  color: #66F2B1;
+  font-size: 20px;
+}
+
+.t2Text {
+  color: #66e0f2;
+  font-size: 20px;
+}
+
+.textField {
+  color: #282828;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 100px;
+  width: 50%;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+  padding: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+form {
+  text-align: center;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  margin: 2px;
+  font-size: 18px;
+  color:#282828;
+  border: 0px;
+}
+
+input.t1Input {
+  background-color: #66F2B1;
+}
+
+input.t2Input {
+  background-color: #66e0f2;
+}
+
+.scorehelp{
+  margin-left:10%;
+  margin-right:10%;
+}
+
+.scoreguide{
+  width:45%;
+  color:white;
+  border: 1px solid;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 20px;
+  padding:2px;
+}
+
+

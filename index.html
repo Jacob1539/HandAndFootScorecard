@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--hand and foot scoresheet V1.5-->
+<html>
+<head>
+	<title>Hand & Foot Scorecard</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="icon.png">
+	<script type="text/javascript" src="scripts.js"></script>
+	<body onLoad="homepageLoaded()">
+</head>
+<body>
+	<header>
+		<ul class="unavbar">
+			<li class="navbar"><a href="index.html" class="active">Scorecard</a></li>
+			<li class="navbar"><a href="scoring.html">Scoring Rules</a></li>
+			<li class="navbar" style="float:right"><a href="about.html">About</a></li>
+		</ul>
+		<h1>Hand & Foot Scoring</h1>
+	</header>
+	<section class="teamNameAndScore">
+			<section class="mainQuadrants">
+				<form>
+					<input type ="text" name="t1Name" placeholder="Team One Name" class="t1Name">
+				</form>
+				<h2 id="t1Score" class="t1Score"></h2>
+			</section>
+			<section class="mainQuadrants">
+				<form>
+					<input type ="text" name="t2Name" placeholder="Team Two Name" class="t2Name">
+				</form>
+				<h2 id="t2Score" class="t2Score"></h2>
+		</section>
+	</section>
+	<section class="fields">
+			<section class="mainQuadrants">
+				<form>
+					<table>
+						<tr>
+							<td><label class="t1Text">Bonus</label></td>
+							<td><label class="t1Text">&emsp;0</label><input type ="radio" id="t1Bonus0" value="0" onclick="setBonus(1, 0)">
+								<label class="t1Text">&emsp;100</label><input type ="radio" id="t1Bonus100" value="100" onclick="setBonus(1, 100)">
+								<label class="t1Text">&emsp;200</label><input type ="radio" id="t1Bonus200" value="200" onclick="setBonus(1, 200)"></td>
+						</tr>
+						<tr>
+							<td><label class="t1Text">Number Of Red Canastas</label></td>
+							<td><input type="number" id="t1Red" class="textField"></td>
+						</tr>
+						<tr>
+							<td><label class="t1Text">Number Of Black Canastas & Red 3s</label></td>
+							<td><input type="number" id="t1Black" class="textField"></td>
+						</tr>
+						<tr>
+							<td><label class="t1Text">Card Values</label></td>
+							<td><input type="number" id="t1Cards" class="textField"></td>
+						</tr>
+						<tr>
+							<td><label class="t1Text">Negative (if needed)</label></td>
+							<td><input type="number" id="t1Negative" class="textField"></td>
+						</tr>
+					</table>
+				<br>
+				<div class="central">
+				<input type="button" class="t1Input" value="Done" onclick="add(1)" id="t1Done">
+				<input type="reset" value="Clear" class="t1Input" id="t1Reset">
+				</form></div>
+			</section>
+			<section class="mainQuadrants">
+				<form>
+					<table>
+						<tr>
+							<td><label class="t2Text">Bonus</label></td>
+							<td><label class="t2Text">&emsp;0</label><input type ="radio" id="t2Bonus0" value="0" onclick="setBonus(2, 0)">
+								<label class="t2Text">&emsp;100</label><input type ="radio" id="t2Bonus100" value="100" onclick="setBonus(2, 100)">
+								<label class="t2Text">&emsp;200</label><input type ="radio" id="t2Bonus200" value="200" onclick="setBonus(2, 200)"></td>
+						</tr>
+						<tr>
+							<td><label class="t2Text">Number Of Red Canastas</label></td>
+							<td><input type="number" id="t2Red" class="textField"></td>
+						</tr>
+						<tr>
+							<td><label class="t2Text">Number Of Black Canastas & Red 3s</label></td>
+							<td><input type="number" id="t2Black" class="textField"></td>
+						</tr>
+						<tr>
+							<td><label class="t2Text">Card Values</label></td>
+							<td><input type="number" id="t2Cards" class="textField"></td>
+						</tr>
+						<tr>
+							<td><label class="t2Text">Negative (if needed)</label></td>
+							<td><input type="number" id="t2Negative" class="textField"></td>
+						</tr>
+					</table>
+				<div class="central">
+				<br>
+				<input type="button" class="t2Input" value="Done" onclick="add(2)" id="t2Done">
+				<input type="reset" value="Clear" class="t2Input" id="t2Reset">
+				</form></div>
+			</section>
+	</section>
+	<section class="mainQuadrants">
+		<div class="central">
+			<input type="button" class="type-dright" value="Reset Scores" onclick="resetScores()" id="t2Done">
+		</div>
+	</section>
+	<footer>
+		<h6>Hand & Foot Score Calculator Version 1.5</h6>
+	</footer>
+</body>
+</html>
