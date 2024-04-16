@@ -4,11 +4,11 @@ var team1Score = 0;
 var team2Score = 0;
 
 /**
-* To be called after the homepage is loaded.  This function will update/load all essential elements onto the homepage.
+* To be called after the homepage is loaded. This function will update/load all essential elements onto the homepage.
 */
 function homepageLoaded() {
-    team1Score = localStorage.getItem("team1ScoreLocalStorage");
-    team2Score = localStorage.getItem("team2ScoreLocalStorage");
+    team1Score = sessionStorage.getItem("team1ScoresessionStorage");
+    team2Score = sessionStorage.getItem("team2ScoresessionStorage");
     if (team1Score == null || team2Score == null) {
         team1Score = 0;
         team2Score = 0;
@@ -85,13 +85,13 @@ function add(teamNum) {
         document.getElementById("t1Score").innerHTML = team1Score;
         document.getElementById("t1Reset").click();
         bonus1 = 0;
-        localStorage.setItem("team1ScoreLocalStorage", team1Score);
+        sessionStorage.setItem("team1ScoresessionStorage", team1Score);
     } else if (teamNum == 2) {
         team2Score = currentScore;
         document.getElementById("t2Score").innerHTML = team2Score;
         document.getElementById("t2Reset").click();
         bonus2 = 0;
-        localStorage.setItem("team2ScoreLocalStorage", team2Score);
+        sessionStorage.setItem("team2ScoresessionStorage", team2Score);
     }
 }
 
@@ -99,8 +99,8 @@ function add(teamNum) {
 * Reset the score of both teams to zero.
 */
 function resetScores() {
-    localStorage.setItem("team1ScoreLocalStorage", 0);
-    localStorage.setItem("team2ScoreLocalStorage", 0);
+    sessionStorage.setItem("team1ScoresessionStorage", 0);
+    sessionStorage.setItem("team2ScoresessionStorage", 0);
     homepageLoaded();
     document.getElementById("t1Reset").click();
     document.getElementById("t2Reset").click();
