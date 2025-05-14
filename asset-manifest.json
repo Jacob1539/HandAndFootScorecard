@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HandAndFootScorecard/static/css/main.ab152a26.css",
+    "main.js": "/HandAndFootScorecard/static/js/main.e718c669.js",
+    "index.html": "/HandAndFootScorecard/index.html",
+    "main.ab152a26.css.map": "/HandAndFootScorecard/static/css/main.ab152a26.css.map",
+    "main.e718c669.js.map": "/HandAndFootScorecard/static/js/main.e718c669.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab152a26.css",
+    "static/js/main.e718c669.js"
+  ]
+}
