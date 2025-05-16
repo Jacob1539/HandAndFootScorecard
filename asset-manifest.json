@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab152a26.css",
-    "main.js": "/static/js/main.e718c669.js",
-    "index.html": "/index.html",
-    "main.ab152a26.css.map": "/static/css/main.ab152a26.css.map",
-    "main.e718c669.js.map": "/static/js/main.e718c669.js.map"
+    "main.css": "/HandAndFootScorecard/static/css/main.ab152a26.css",
+    "main.js": "/HandAndFootScorecard/static/js/main.5774bf1a.js",
+    "index.html": "/HandAndFootScorecard/index.html",
+    "main.ab152a26.css.map": "/HandAndFootScorecard/static/css/main.ab152a26.css.map",
+    "main.5774bf1a.js.map": "/HandAndFootScorecard/static/js/main.5774bf1a.js.map"
   },
   "entrypoints": [
     "static/css/main.ab152a26.css",
-    "static/js/main.e718c669.js"
+    "static/js/main.5774bf1a.js"
   ]
 }
