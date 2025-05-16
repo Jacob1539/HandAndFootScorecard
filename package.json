@@ -1,7 +1,7 @@
 {
   "name": "hfsc",
   "version": "0.1.0",
-  "homepage": "https://Jacob1539.github.io/HandAndFootScorecard/",
+  "homepage": "https://jacob1539.github.io/HandAndFootScorecard",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
